@@ -38,7 +38,7 @@ class Patient(models.Model):
     region = models.ForeignKey('MapRegion', on_delete=models.CASCADE)
     age = models.IntegerField(default=0, help_text="Age of Person")
     symptoms = models.ManyToManyField(Symptom, help_text="Current Symptoms")
-    condition = models.ManyToManyField(Condition, help_text="Patients Pre-exsisting Condition")
+    conditions = models.ManyToManyField(Condition, help_text="Patients Pre-exsisting Condition")
     has_travelled = models.BooleanField(help_text="Has the patient travled to an affected area")
     has_had_contact = models.BooleanField(help_text="Has the patient had contact with anyone with the virus")
     has_tested = models.BooleanField(null=True, blank=True, help_text="Has the patient been tested and what is the result")

@@ -1,8 +1,8 @@
-from .models import Patient
+from .forms import PatientForm
 from django.views.generic import CreateView
 from crispy_forms.helper import FormHelper
 
 # Create your views here.
 class PatientCreateView(CreateView):
-    model = Patient
-    fields = '__all__'
+    form_class = PatientForm
+    template_name = "gaborone/patient_form.html"

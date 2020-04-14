@@ -2,6 +2,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+  <h1 class="mt-2">Submit your detials</h1>
+  <hr class="mt-0 mb-4">
   <form method="post" novalidate>
     {% csrf_token %}
     {{ form|crispy }}
