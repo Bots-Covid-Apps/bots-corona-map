@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'jsonfield',
     'djgeojson',
     'leaflet',
+    'phonenumber_field',
     'gaborone'
 ]
 
