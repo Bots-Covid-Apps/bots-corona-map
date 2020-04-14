@@ -8,6 +8,9 @@ class MapRegion(models.Model):
     current_cases = models.IntegerField(default=0)
     geom = PolygonField()
 
+    def __str__(self):
+        return self.region_name
+
 class Symptom(models.Model):
     description = models.CharField(max_length=100)
     

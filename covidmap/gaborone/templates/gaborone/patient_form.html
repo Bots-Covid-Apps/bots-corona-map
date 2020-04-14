@@ -4,9 +4,5 @@
 {% block content %}
   <h1 class="mt-2">Submit your detials</h1>
   <hr class="mt-0 mb-4">
-  <form method="post" novalidate>
-    {% csrf_token %}
-    {{ form|crispy }}
-    <button type="submit" class="btn btn-success">Save Patient</button>
-  </form>
+  {% crispy form %}
 {% endblock %}
