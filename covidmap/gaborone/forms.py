@@ -22,15 +22,13 @@ class PatientForm(forms.ModelForm):
                 css_class='form-row'
             ),
             Row(
-                Column('has_travelled', css_class='form-group col-md-4 mb-0'),
-                Column('has_had_contact', css_class='form-group col-md-4 mb-0'),
-                Column('has_tested', css_class='form-group col-md-4 mb-0'),
-                
+                Column('has_travelled', css_class='form-group col-md-6 mb-0'),
+                Column('has_had_contact', css_class='form-group col-md-6 mb-0'),                
                 css_class='form-row'
             ),
             Row(
-                Column('', css_class="form-group col-md-8 mb-0"),
-                Column('test_result', css_class='form-group col-md-4 mb-0'),
+                Column('has_tested', css_class='form-group col-md-6 mb-0'),
+                Column('test_result', css_class='form-group col-md-6 mb-0'),
                 css_class='form-row'
             ),
             Row(
@@ -47,6 +45,5 @@ class PatientForm(forms.ModelForm):
         fields = '__all__'
         widgets = {
             'symptoms': forms.CheckboxSelectMultiple,
-            'conditions': forms.CheckboxSelectMultiple
+            'conditions': forms.CheckboxSelectMultiple,
             } 
-
