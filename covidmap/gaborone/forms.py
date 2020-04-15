@@ -25,6 +25,12 @@ class PatientForm(forms.ModelForm):
                 Column('has_travelled', css_class='form-group col-md-4 mb-0'),
                 Column('has_had_contact', css_class='form-group col-md-4 mb-0'),
                 Column('has_tested', css_class='form-group col-md-4 mb-0'),
+                
+                css_class='form-row'
+            ),
+            Row(
+                Column('', css_class="form-group col-md-8 mb-0"),
+                Column('test_result', css_class='form-group col-md-4 mb-0'),
                 css_class='form-row'
             ),
             Row(
