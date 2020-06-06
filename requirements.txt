@@ -1,7 +1,7 @@
 asgiref==3.2.7
 astroid==2.3.3
 Babel==2.8.0
-Django==3.0.5
+Django==3.0.7
 django-crispy-forms==1.9.0
 django-geojson==3.0.0
 django-leaflet==0.26.0
